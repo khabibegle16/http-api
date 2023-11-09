@@ -23,7 +23,7 @@ module.exports.handler = async (event) => {
   
   return {
     statusCode: 200,
-    body: "demo message"
+    body: "demo message1"
     
   };
 };
