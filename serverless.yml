@@ -1,0 +1,14 @@
+service: http-api
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  apiDemo:
+    handler: index.handler
+    events:
+      - httpApi:
+          path: /fetchdata
+          method: get
